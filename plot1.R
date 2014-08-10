@@ -1,8 +1,15 @@
 # plot1.R ------------------------------------- #
 
 
+setwd("~/data_science_toolbox/R/04_project_01")
+
+## Code to create new directory if needed
+if (!file.exists("coursera_explor_proj_1")) {
+  dir.create("coursera_explor_proj_1")
+}
+
 ## Set working directory
-setwd("~/data_science_toolbox/R/ExData_Plotting1")
+setwd("~/data_science_toolbox/R/04_project_01/coursera_explor_proj_1")
 wd_var <- getwd()
 
 ## Download .zip file to specified destination
@@ -49,8 +56,6 @@ png(file="plot1.png", height=480, width=480)
 hist(use_dat$Global_active_power,
      main = "Global Active Power",
      xlab = "Global Active Power (kilowatts)",
-     col = "red",
-     yaxt = "n"
-    )  
-axis(side=2, at=seq(0, 1200, 200), labels=seq(0, 1200, 200), cex.axis=.75)
+     col = "red"
+    )
 dev.off()
