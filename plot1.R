@@ -1,15 +1,8 @@
 # plot1.R ------------------------------------- #
 
 
-setwd("~/data_science_toolbox/R/04_project_01")
-
-## Code to create new directory if needed
-if (!file.exists("coursera_explor_proj_1")) {
-  dir.create("coursera_explor_proj_1")
-}
-
 ## Set working directory
-setwd("~/data_science_toolbox/R/04_project_01/coursera_explor_proj_1")
+setwd("~/data_science_toolbox/R/ExData_Plotting1")
 wd_var <- getwd()
 
 ## Download .zip file to specified destination
